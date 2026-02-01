@@ -12,14 +12,13 @@ public class User {
     private int id;
 
     @Column(nullable = false, unique = true)
-    @NotBlank(message = "Username must be entered")
+
     private String userName;
 
     @Column(nullable = false)
-    @NotBlank(message = "Password must be entered")
+
     private String password;
 
-    @NotBlank(message = "Department must be given")
     private String department;
 
 
